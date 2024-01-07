@@ -1,0 +1,193 @@
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: 'poppins' , sans-serif;
+    }
+    section {
+        position:relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background:#fff ;
+    }
+    header {
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        padding:20px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .logo{
+        position: relative;
+        max-width: 80px;
+    }
+    header ul {
+        position:relative;
+        display: flex;
+    }
+    header ul li {
+        list-style:none ;
+    }
+    header ul li a {
+        display: inline-block;
+        color:#337CCF;
+        font-weight: 400;
+        margin-left: 40px;
+        text-decoration: none;
+    }
+    .content{
+        position:relative ;
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        align-items:center ;
+    }
+    .content .textbox{
+        position: relative;
+        max-width: 600px;
+    }
+    .content .textbox h2{
+        color:#333;
+        font-size:4em ;
+        line-height: 1.4em;
+        font-weight:500 ;
+    }
+    .content .textbox h2 span {
+        color:#337CCF;
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+    .content .textbox p {
+        color:#333;
+
+    }
+    .content .textbox a {
+        display: inline-block;
+        margin-top: 20px;
+        padding:8px 20ox;
+        background: #337CCF;
+        color:#fff;
+        border-radius: 40px;
+        font-weight:500;
+        letter-spacing:none;
+        text-decoration: none;
+        width: 150px;
+      
+    }
+    .content .imgbox {
+        width: 600px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 50px;
+        margin-top: 50px;
+    }
+    .content .imgbox img {
+        max-width: 340px;
+        border-radius: 50px;
+        box-shadow: 0px 4px 10px 1px #000;
+    }
+    .thumb {
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+        display: flex;
+
+    }
+    .thumb li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        cursor: pointer;
+        transition:0.5s;
+    }
+    .thumb li :hover{
+        transform: translateY(-15px);
+    }
+    .thumb li img{
+        max-width: 60px;
+    }
+    .sci {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        flex-direction: column;
+    }
+    .sci li {
+        list-style: none;
+    }
+    .sci li  a {
+         display: inline-block;
+        margin: 5px 0;
+        transform: scale(0.6);
+        filter: invert(1);
+    }
+    .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #337CCF;
+        clip-path: circle(600px at right 800px) ;
+    } 
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>BILQOLAB Landing page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#" ><img src="Screenshot_2023-11-15_163158-removebg-preview.png" class="logo"></a>
+                <ul>
+                    <li><a href="Login.html">LOGIN</a></li> 
+                    <li><a href="register.html">REGISTRASI</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>This is not QOLEB<br>This is <span>BILQOLAB website</span></h2>
+                    <p>Ciptakan pengalaman belajar yang lebih
+                        menyenangkan dengan BILQOLAB.
+                    </p>
+                    <a href="penjelasan.html">lihat materi</a>
+                </div>
+            <div class="imgBox">
+                <img src="quran.jpg" class="BILQOLAB">
+            </div>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function imgslider(anything) {
+                document.queryselctor('.BILQOLAB').src =anything;
+            }
+            function  changecirclecolor(color){
+                const circle =document.querySelector('.circle');
+                circle.style.background=color;
+            }
+        </script>
+    </body>
+</html>

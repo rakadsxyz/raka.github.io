@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;800&family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+.sidebar{
+    position: fixed;
+    background-color: #2E97A7;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+.logo{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 10px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo img{
+    font-weight: bold;
+    width: 60px;
+    float: left;
+}
+.sidebar ul{
+    margin-top: 20px;
+}
+.sidebar ul li{
+    font-size: 24px;
+    padding: 13px 40px;
+    color: black;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.sidebar ul li:hover{
+    background: rgba(0,0,0,0.2);
+    color: rgb(0, 0, 0);
+}
+.container{
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+}
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background-color: #2E97A7;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.content{
+    position: relative;
+    margin-top: 16vh;
+    margin-left: 100px;
+}
+.content .cards{
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+
+}
+.content .cards .card{
+    width: 300px;
+    height: 200px;
+    background: rgb(212, 212, 212);
+    font-size: 24px;
+    margin: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.content .cards .card .icon i{
+    font-size: 80px; 
+    color: rgb(87, 99, 110);
+}
+.content .cards .card h2{
+    margin-bottom: 5px;
+    margin-left: 20px;
+    color: rgb(63, 196, 196);
+}
+.content .cards .card:hover{
+  transform: rotate(15deg);
+  transform: scale(0.2);
+  transform: scale(1.1);
+}
+
+.content2{
+    position: relative;
+    margin-left: 100px;
+}
+.content h1{
+    font-weight: 900;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-bottom: 8px;
+}
+.content2 .cards2{
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+}
+.content2 .cards2 .card2{
+    width: 300px;
+    height: 200px;
+    background: rgb(224, 223, 223);
+    font-size: 24px;
+    margin: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.content2 .cards2 .card2 .icon2 i{
+    font-size: 80px; 
+    color: rgb(87, 99, 110);
+}
+.content2 .cards2 .card2 h2{
+    margin-bottom: 5px;
+    margin-left: 20px;
+    color: rgb(63, 196, 196);
+}
+.content2 .cards2 .card2:hover{
+  transform: rotate(15deg);
+  transform: scale(0.2);
+  transform: scale(1.1);
+}
+</style>
+<body>
+    <div class="circle"></div>
+    <div class="sidebar">
+        <div class="logo">
+        <img src="Screenshot_2023-11-15_163158-removebg-preview.png" alt="BILQOLAB"> BILQOLAB
+        </div>
+        <ul>
+            <div class="dashboard">
+                <a href="Dashbord Admin.html"><li><i class="fa-solid fa-gauge" style="color: rgb(0, 0, 0);"></i>&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">Dashboard</span></li></a>
+            </div>
+            <a href="Data User.html"><li><i class="fa-solid fa-user"></i>&nbsp;&nbsp;<span>Data User</span></li></a>
+            <a href="Data Artikel.html"><li><i class="fa-regular fa-newspaper"></i>&nbsp;&nbsp;<span>Data Artikel</span></li></a>
+            <a href="Data Video.html"><li><i class="fa-solid fa-video"></i>&nbsp;&nbsp;<span>Data Video</span></li></a>
+            <a href="Data Komentar.html"><li><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;<span>Data Komentar</span></li></a>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Dashboard Admin</h1>
+        </div>
+    <div class="content">
+        <!-- <h1>Selamat Datang Di Dashboard Admin Bola Media</h1> -->
+        <div class="cards">
+            <a href="Data User.html" style="color: black;"><div class="card">
+                <div class="box">
+                    <h2>894</h2>
+                    <h3>Data User</h3>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+            <a href="Data Artikel.html" style="color: black;"><div class="card">
+                <div class="box">
+                    <h2>68</h2>
+                    <h3>Data Artikel</h3>
+                </div>
+                <div class="icon">
+                    <i class="fa-regular fa-newspaper"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="Data Video.html" style="color: black;"><div class="card">
+    <div class="content2">
+        <div class="cards2">
+            <a href="video.html" style="color: black;"><div class="card2">
+                <div class="box2">
+                    <h2>35</h2>
+                    <h3>Data Video</h3>
+                </div>
+                <div class="icon2">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+            </div></a>
+            <a href="komentar.html" style="color: black;"><div class="card2">
+                <div class="box2">
+                    <h2>372</h2>
+                    <h3>Data Komentar</h3>
+                </div>
+                <div class="icon2">
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

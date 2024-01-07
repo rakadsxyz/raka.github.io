@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILQOLAB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;800&family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+.sidebar{
+    position: fixed;
+    background-color: #337CCF;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-bottom: 2px solid whitesmoke;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.logo img{
+    font-weight: bold;
+    width: 30px;
+    margin-right: 30px;
+    float: left;
+    margin-left: 60px;
+}
+.sidebar ul{
+    margin-top: 20px;
+}
+.sidebar ul li{
+    font-size: 24px;
+    padding: 13px 40px;
+    color: rgb(189, 186, 186);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.sidebar ul li:hover{
+    background: rgba(0,0,0,0.2);
+    color: white;
+}
+.container{
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+}
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background-color: #337CCF;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 6px 20px 0px #337CCF;
+    border-bottom: 2px solid whitesmoke;
+    z-index: 1;
+}
+.table{
+    margin-top: 15vh;
+    width: 100%;
+    margin-left: 5vh;
+}
+.table_header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+}
+.table_header i{
+    margin-left: 20px;
+    color: #161515;
+}
+.table_section{
+    width: 1200px;
+    margin-top: 30px;
+    margin-left: 140px;
+}
+table{
+    width: 100%;
+    table-layout: fixed;
+    min-width: 900px;
+    border-collapse: collapse;
+}
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: #f6f9fc;
+    color: #8493a5;
+    font-size: 15px;
+}
+th,td{
+    border-bottom: 1px solid #dddd;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+}
+tr:hover td{
+    color: #0298cf;
+    cursor: pointer;
+    background-color: #f6f9fc;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #FFFFFF;
+}
+td button:nth-child(1){
+    background-color: #0298cf;
+}
+td button:nth-child(2){
+    background-color: #f00000;
+}
+::placeholder{
+    color: #0298cf;
+}
+::-webkit-scrollbar{
+    height: 5px;
+    width: 5px;
+}
+table{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+</style>
+<body>
+    <div class="circle"></div>
+    <div class="sidebar">
+        <div class="logo">
+        <img src="BR.png" alt="BILQOLAB">BILQOLAB
+        </div>
+        <ul>
+            <a href="admin.html"><li><i class="fa-solid fa-gauge"></i>&nbsp;&nbsp;<span>Dashboard</span></li></a>
+            <a href="user.html"><li><i class="fa-solid fa-user"></i>&nbsp;&nbsp;<span>Data User</span></li></a>
+            <a href="artikel.html"><li><i class="fa-regular fa-newspaper" style="color: white;"></i>&nbsp;&nbsp;<span style="color: white;">Data Artikel</span></li></a>
+            <div class="dashboard">
+            <a href="video.html"><li><i class="fa-solid fa-video"></i>&nbsp;&nbsp;<span>Data Video</span></li></a>
+            </div>
+            <a href="komentar.html"><li><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;<span>Data Komentar</span></li></a>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Dashboard Admin</h1>
+        </div>
+        <div class="table">
+            <div class="table_header">
+                <h1><i class="fa-regular fa-newspaper"></i> &nbsp;Data Artikel</h1>
+            </div>
+        </div>
+        <div class="table_section">
+            <table>
+                <thead>
+                    <tr>
+                    <th>No.</th>
+                    <th>Materi</th>
+                    <th>Definisi</th>
+                    <th>Isi</th>
+                    <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Agama</td>
+                        <td>Pengertian</td>
+                        <td>Sepak bola adalah.....</td>
+                        <td>
+                            <button><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Agama</td>
+                        <td>Sejarah</td>
+                        <td>Asal usul permainan sepak bola dipertemukan</td>
+                        <td>
+                            <button><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Agama</td>
+                        <td>Peraturan</td>
+                        <td>Berikut beberapa peraturan yang ada dalam permainan sepak bola</td>
+                        <td>
+                            <button><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Agama</td>
+                        <td>Teknik Dasar</td>
+                        <td>Teknik dasar dalam permainan sepak bola menjadi salah satu elemen yang paling jelas dan terlihat dalam permainan sepakbola. </td>
+                        <td>
+                            <button><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Agama</td>
+                        <td>Manfaat</td>
+                        <td>Sepak bola memilik banyak manfaat antara lain... </td>
+                        <td>
+                            <button><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
